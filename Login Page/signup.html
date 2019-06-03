@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="bg" class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 title">
+                    <img class="hpgov" src="hpgovet.jpg" width="200px" height="150px">
+                    <img class="hphm" src="hphmet.jpg" width="200px" height="200px">
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: -1px -1px 1px rgb(64, 138, 199),
+                    0px 4px 1px rgba(62, 99, 219, 0.5),
+                    4px 4px 5px rgba(34, 74, 204, 0.7),
+                    0px 0px 7px rgba(43, 67, 199, 0.4); font-size: 5vmin;"><center>H.P. Government</center></h1>
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: -1px -1px 1px rgb(64, 138, 199),
+                    0px 4px 1px rgba(62, 99, 219, 0.5),
+                    4px 4px 5px rgba(34, 74, 204, 0.7),
+                    0px 0px 7px rgba(43, 67, 199, 0.4);font-size: 4vmin;"><center>Child Mortality Review System<br>(HPCMRS)</center></h1>
+                </div>
+
+            </div>    
+        </div>
+        <!--<div class="container text-center">-->
+                <nav class="navbar navbar-inverse navigation">
+                        <div class="container-fluid">
+                          <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                            <a class="navbar-brand glyphicon glyphicon-home" href="hpcmrs.html">Home</a>
+                          </div>
+                          <div class="collapse navbar-collapse" id="myNavbar">
+                          <ul class="nav navbar-nav">
+                            <li><a href="bootstrapLogin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li><a href="anmpage.html">ANM Page</a></li>
+                            <li><a href="mopage.html">MO Page</a></li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                                <li class="active" style="background-color: cornflowerblue;"><a href="#">SIGN UP</a></li>
+                            
+                          </ul>
+                        </div>
+                        </div>
+                      </nav>
+            <div class="row">
+                <div class="col-md-5 form" style="background-color: teal;background-image: linear-gradient(to right,black,rgb(0, 90, 90),rgb(3, 194, 194));">
+
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-shadow: -1px -1px 1px rgb(12, 13, 14),
+                    0px 4px 1px rgba(7, 8, 8, 0.5),
+                    4px 4px 5px rgba(15, 15, 17, 0.7),
+                    0px 0px 7px rgba(20, 20, 22, 0.4);"><center>REGISTRATION</center></h1><br>
+                    <form name="signupForm" action="#" onsubmit="Validatesignup()">
+
+                        <b>User Identity:</b>
+                    
+                        <select name="type" id="user">
+                        <option value="" selected disabled hidden>Choose Here</option>
+                        <option value="asha"><b>ASHA</b></option>
+                        <option value="anm"><b>ANM</b></option>
+                        <option value="medicalofficer"><b>MED OFF</b></option>
+                        <option value="spo"><b>SPO</b></option>
+                        </select>
+                        <p class="typeError" style="color: red"></p><br><br>
+
+                       
+                        <b>Name:</b>
+                        <input type="text" name="" id="name" class="form-control" placeholder=" Enter Username">
+                        <p class="nameError" style="color: red"></p><br>
+
+                        <b>Username:</b>
+                        <input type="password" name="" id="password" class="form-control" placeholder=" Enter Password">
+                        <p class="userError" style="color: red"></p><br>
+
+                        <b>Password:</b>
+                        <input type="password" name="" id="password" class="form-control" placeholder=" Enter Password">
+                        <p class="passError" style="color: red"></p><br>
+
+                        <b>Age:</b>
+                        <input type="password" name="" id="password" class="form-control" placeholder=" Enter Password">
+                        <p class="ageError" style="color: red"></p><br>
+
+                        <b>Gender:</b>
+                        <select name="gender" id="gender">
+                                <option value="" selected disabled hidden>Choose Here</option>
+                                <option value="female"><b>FEMALE</b></option>
+                                <option value="male"><b>MALE</b></option>
+                                <option value="other"><b>OTHER</b></option>
+                                </select>
+                                <p class="genderError" style="color: red"></p><br><br>
+
+                        <center><input type="submit" name="" class="btn btn-primary" value="REGISTER" style="background-color: rgb(13, 153, 106);"></center><br>
+                    </form>
+
+                </div>
+                
+            </div>
+        </div>
+        <footer class="container-fluid query">
+            <p>
+                <center><u><b>Developed By:</b></u></center>
+                <center>&copy;Students of IIIT UNA, H.P.</center>
+                <center><a href="iiitu.ac.in">@iiitu.ac.in</a></center>
+            </p>
+        </footer>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+            <script type="text/javascript">
+                function Validatesignup(){
+                    var un = $("#name").val();
+                    var pass = $("#password").val();
+
+                    if(un == ""){
+                        $(".nameError").html("Enter Username");
+                    }
+
+                    if(pass == ""){
+                        $(".passError").html("Enter Password");
+                    }
+
+                }
+            </script>
+
+    </body>
+</html>

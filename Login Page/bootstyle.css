@@ -1,0 +1,131 @@
+
+.title{
+    /*height: 17vh;*/
+    
+    font-style: normal;
+    font-size: 10%;
+    /*font-size: 15px;
+    /*font-size: 2vh;*/
+    color: rgb(246, 244, 248);
+    transition: 0.6s ease;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(18, 2, 54);
+    background-image: linear-gradient(rgb(18, 2, 54), rgb(27, 101, 212));
+}
+
+.hpgov {
+    height: 17vh;
+    width : 11vw;
+    float: left;
+    /*width: 155px;
+    height: 105px;*/
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px; 
+    
+}
+
+.hphm {
+    height: 17vh;
+    width : 9vw;
+    float: right;
+    /*width: 105px;
+    height: 105px;*/
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 8px;
+}
+
+.form{
+    float: none;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(16, 135, 214);
+    padding: 55px 55px 20px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-image: linear-gradient(to right,black,rgb(33, 20, 66),rgb(54, 8, 160), rgb(88, 144, 228));
+    /*position: absolute*/
+}
+
+
+.form input[type="text"], input[type="password"]{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: #ffffff;
+    width: 100%;
+    height: 10%;
+    color: #ffffff;
+    font-size: 12px;
+}
+.form input[type="submit"]{
+    /*border: 2px solid white;*/
+    position: relative;
+    font-weight: bolder;
+    font-size: 120%;
+    color:white;
+    border-radius: 12px;
+    background-color:rgb(13, 26, 216);
+    padding:5px 50px 5px 50px;
+}
+.form #user,#gender{
+    color: black;
+}
+
+.navigation{
+    background-color: rgb(46, 46, 109);
+    color: #ffffff;
+}
+
+
+.query{
+
+    color: #c0fdcd;
+    background-color: rgb(82, 188, 214);
+    background-image: linear-gradient( rgb(82, 188, 214), rgb(60, 23, 228));
+}
+.query a{
+    color:  yellow;
+}
+
+
+.hpcmrs{
+    text-align: left;
+    color: black;
+    float: none;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(154, 155, 156);
+    padding: 55px 55px 20px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    /*position: absolute*/
+}
+
+.mopage{
+    float: none;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(180, 68, 245);
+    padding: 50px 55px 20px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    background-image: linear-gradient(rgb(180, 68, 245),  rgb(88, 34, 99));
+}
+
+.anmpage{
+    float: none;
+    margin: 0 auto;
+    color: rgb(11, 59, 21);
+    background-color: rgb(119, 250, 152);
+    
+    padding: 50px 55px 20px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    background-image: linear-gradient(rgb(119, 250, 152), rgb(17, 116, 33));
+}
