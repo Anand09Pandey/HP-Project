@@ -6,3 +6,5 @@ Technologies used:
 3. Javascript,
 4. Bootstrap,
 5. Jquery.
+
+NOTE: Latest update containing Form Validations, Password visibility toggle, and finished styles etc. 
