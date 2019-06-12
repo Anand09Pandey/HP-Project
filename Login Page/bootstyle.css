@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@-ms-viewport{
+    width: device-width;
+  }
+
+.title{
+    /*height: 17vh;*/
+    
+    font-style: normal;
+    font-size: 10%;
+    /*font-size: 15px;
+    /*font-size: 2vh;*/
+    color: rgb(246, 244, 248);
+    transition: 0.6s ease;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(18, 2, 54);
+    background-image: linear-gradient(rgb(18, 2, 54), rgb(27, 101, 212));
+}
+
+.hpgov {
+    height: 20vh;
+    width : 11vw;
+    float: left;
+    /*width: 155px;
+    height: 105px;*/
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px; 
+    
+}
+
+.hphm {
+    height: 20vh;
+    width : 11vw;
+    float: right;
+    /*width: 105px;
+    height: 105px;*/
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 8px;
+}
+
+.form{
+    float: none;
+    margin: 0 auto;
+    color: white;
+    padding: 10px 55px 20px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: teal;
+    background-image: linear-gradient(to right,black,rgb(0, 90, 90),rgb(3, 194, 194));
+    /*position: absolute*/
+}
+
+
+.form input[type="text"], input[type="password"]{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: #ffffff;
+    width: 100%;
+    height: 10%;
+    color: #ffffff;
+    font-size: 12px;
+
+}
+.form input[type="submit"]{
+    /*border: 2px solid white;*/
+    position: relative;
+    font-weight: bolder;
+    font-size: 120%;
+    color:white;
+    border-radius: 12px;
+    background-color: rgb(7, 187, 172);
+    padding:5px 50px 5px 50px;
+}
+.form #type,#gender{
+    color: black;
+    border-radius: 12px;
+    background-color: rgb(7, 187, 172);
+}
+
+.navigation{
+    background-color: rgb(18, 18, 119);
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+
+.query{
+
+    color: #c0fdcd;
+    background-color: rgb(82, 188, 214);
+    background-image: linear-gradient( rgb(82, 188, 214), rgb(60, 23, 228));
+}
+.query a{
+    color:  yellow;
+}
+
+
+.hpcmrs{
+    text-align: left;
+    color: black;
+    float: none;
+    margin: 0 auto;
+    color: white;
+    padding: 55px 55px 20px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: teal;
+    background-image: linear-gradient(to right,black,rgb(0, 90, 90),rgb(3, 194, 194))
+    /*position: absolute*/
+}
+
+.anmpage,.mopage{
+    float: none;
+    margin: 0 auto;
+    color: white;
+    
+    padding: 2px 55px 30px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    background-color: teal;
+    background-image: linear-gradient(to right,black,rgb(0, 90, 90),rgb(3, 194, 194))
+}
+
+.oneOFour{
+    float: none;
+    margin: 0 auto;
+    color: white;
+    
+    padding: 10px 55px 20px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: teal;
+    background-image: linear-gradient(to right,black,rgb(0, 90, 90),rgb(3, 194, 194))
+
+    /*background-image: linear-gradient(to right,rgba(92, 59, 9, 0.973), rgb(143, 100, 7),rgb(223, 185, 19),rgb(241, 238, 55));*/
+}
+
+.oneOFour input[type="text"], input[type="password"]{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: #ffffff;
+    width: 100%;
+    height: 10%;
+    color: #ffffff;
+    font-size: 12px;
+}
+.oneOFour input[type="submit"]{
+    /*border: 2px solid white;*/
+    position: relative;
+    font-weight: bolder;
+    font-size: 120%;
+    color:white;
+    border-radius: 12px;
+    background-color: rgb(7, 187, 172);
+    padding:5px 50px 5px 50px;
+}
+
+.backcolor{
+    background-color: rgb(184, 252, 252);
+}
+
+.onsubmit{
+    float: none;
+    margin: 0 auto;
+    color: white;
+    
+    padding: 60px 55px 60px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    background-color: teal;
+    background-image: linear-gradient(to right,black,rgb(0, 90, 90),rgb(3, 194, 194));
+}
+
+.tick{
+    font-size: 300%;
+    border: 3px solid #ffffff;
+    background-color: rgb(3, 216, 170);
+    text-shadow: -1px -1px 1px black,
+                0px 4px 1px black,
+                4px 4px 5px black,
+                0px 0px 7px black;
+}
+
+.error{
+    float: none;
+    margin: 0 auto;
+    color: white;
+    
+    padding: 60px 55px 60px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    background-color: teal;
+    background-image: linear-gradient(to right,black,rgb(0, 90, 90),rgb(3, 194, 194));
+}
+
+.cross{
+    font-size: 300%;
+    border: 3px solid #ffffff;
+    background-color: rgb(3, 216, 170);
+    text-shadow: -1px -1px 1px black,
+                0px 4px 1px black,
+                4px 4px 5px black,
+                0px 0px 7px black;
+}
+
+.invalid{
+    float: none;
+    margin: 0 auto;
+    color: white;
+    
+    padding: 60px 55px 60px 55px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    background-color: teal;
+    background-image: linear-gradient(to right,black,rgb(0, 90, 90),rgb(3, 194, 194));
+}
+
+.bancircle{
+
+    font-size: 300%;
+    border: 3px solid #ffffff;
+    background-color: rgb(3, 216, 170);
+    text-shadow: -1px -1px 1px black,
+                0px 4px 1px black,
+                4px 4px 5px black,
+                0px 0px 7px black;
+}
+
+#loginForm label.error {
+    color:red;
+    max-height: 20%;
+}
+#loginForm input.error {
+    border:1px solid red;
+}
+
+.loginForm.error{
+    max-height: 20px;
+}
