@@ -49,7 +49,7 @@
 				<input type="text" name="rhc" placeholder="RHC Number of Mother/Baby" required pattern="[0-9]+" title="Only numeric digits allowed"></td>
 				</tr><tr>
 				<td>Year*:<br>
-				<input type="number" name="year" placeholder="Year" required pattern="[0-9]{4}+" title="Only numeric digits allowed"></td>
+				<input type="number" name="year" placeholder="Year" required pattern="[0-9]{4}" title="Only numeric digits allowed"></td>
 				<td>Name of Head of Household*:<br>
 				<input type="household" name="headOfHousehold" placeholder="Head Household" required pattern="[A-Za-z]+[A-Za-z ]+" title="Only alplhabets allowed"></td>
 				</tr><tr>
@@ -127,8 +127,8 @@
 							<tr>
 							<td>7. Deceased's Sex:</td>
 							<td>
-							<select name="deceasedSex">
-							<option value="none">--Select--</option>
+							<select name="deceasedSex" required>
+							<option value="">--Select--</option>
 							<option value="male">Male</option>
 							<option value="female">Female</option>
 							</select></td></tr>
@@ -136,8 +136,8 @@
 							<tr>
 							<td>8. Age in completed days*:</td>
 							<td>
-							<select name="ageInCompletedDays">
-							<option value="none">--Select--</option>
+							<select name="ageInCompletedDays" required>
+							<option value="">--Select--</option>
 							<option value="less than 1 day">less than 1 day</option>
 							<option value="01-28 days">01-28 days</option>
 							</select></td></tr>
@@ -145,29 +145,29 @@
 							<tr>
 							<td>9. Date of birth*:</td>
 							<td>
-							<input type="date" name="dateOfBirth">
+							<input type="date" name="dateOfBirth" required>
 							</td></tr>
 
 						<tr>
 							<td>10. Date of death*:</td>
-							<td><input type="date" name="dateOfDeath"></td>
+							<td><input type="date" name="dateOfDeath" required></td>
 						</tr>
 
 						<tr>
 							<td>11A. House address of the deceased*:</td>
-							<td><textarea name="houseAddress" rows="3" cols="40" placeholder="Type to text"></textarea></td></td>
+							<td><textarea name="houseAddress" rows="3" cols="40" placeholder="Type to text" required pattern="[a-zA-Z0-9]+.+" title="Address can't start with a space"></textarea></td></td>
 						</tr>
 						<tr>	
 							<td>11B. Pin Code*:</td>
 
-							<td><input type="text" name="pincode" placeholder="Pincode" required></td>
+							<td><input type="text" name="pincode" placeholder="Pincode" required pattern="[0-9]{6}" title="Address can't start with a space"></td>
 						</tr>
 
 						<tr>
 							<td>12 Place of death*:</td>
 							<td>
-							<select name="placeOfDeath">
-							<option value="none">--Select--</option>
+							<select name="placeOfDeath" required>
+							<option value="">--Select--</option>
 							<option value="home">Home</option>
 							<option value="private Hospital">Private Hospital</option>
 							<option value="PHC/CHC/rural hospital">PHC/CHC/Rural Hospital</option>
@@ -182,7 +182,7 @@
 
 							<tr>
 								<td>What did the respondent think the newborn died of?*<br>(Allow the respondent to tell the illness in his or her own words)</td>
-								<td><textarea rows="2" columns="2" placeholder="Type" name="respondentThink" required></textarea></td>
+								<td><textarea rows="2" columns="2" placeholder="Type" name="respondentThink" required pattern="[A-Za-z]+[A-Za-z ]+" title="Only alphabets allowed."></textarea></td>
 								<td></td>
 							</tr></table>
 
