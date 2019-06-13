@@ -103,7 +103,7 @@
                         <p id="confirm" style="color: yellow"></p><br>
 
                         <b>Age:</b>
-                        <input type="text" name="age" id="age" class="form-control" placeholder=" Enter Age" autocomplete= "off" maxlength="3" pattern="[1-9][0-9]*{0,3}" title="Insert Age in Years" required>
+                        <input type="text" name="age" id="age" class="form-control" placeholder=" Enter Age" autocomplete= "off" maxlength="3" pattern="[1-9][0-9]*" title="Insert Age in Years, Invalid Pattern: 023" required>
                         <br>
 
                         <b>Gender:</b>
@@ -120,7 +120,7 @@
                         <br>
 
                         <b>Mobile Number:</b>
-                        <input type="text" name="mobile" id="mobile" class="form-control" placeholder=" Enter Mobile Number" autocomplete= "off" pattern="[0-9]{10}" title="Insert 10-digits Mobile Number" required>
+                        <input type="text" name="mobile" id="mobile" class="form-control" placeholder=" Enter Mobile Number" autocomplete= "off" maxlength="10" pattern="[0-9]{10}" title="Insert 10-digits Mobile Number" required>
                         <br>
 
                         <center><input type="submit" name="register" id="register" class="btn btn-primary" value="REGISTER" style="background-color: rgb(7, 187, 172);"></center><br>
