@@ -192,8 +192,8 @@
 								<tr>
 									<td>13A.Did s/he die from an injury or accident?*</td>
 									<td>
-										<select id="one" name="injuryOrAccident">
-											<option value="none">--Select--</option>
+										<select id="one" name="injuryOrAccident" required>
+											<option value="">--Select--</option>
 											<option value="Yes">Yes</option>
 											<option value="No">No</option>
 											<option value="Unknown">Unknown</option>
@@ -201,8 +201,8 @@
 									</td>
 									<td>13B.If yes, what kind of injury or accident?*</td>
 									<td>
-										<select disabled="disabled" id="two" name="kindOfInjuryOrAccident">
-											<option value="none">--Select--</option>
+										<select disabled="disabled" id="two" name="kindOfInjuryOrAccident" required>
+											<option value="">--Select--</option>
 											<option value="Road traffic injury">Road traffic injury</option>
 											<option value="Falls">Falls</option>
 											<option value="Fall  of objects">Fall of objects</option>
@@ -218,24 +218,24 @@
 											<tr>
 												<td>14A.How many months long was the pregnancy?*</td>
 												<td>
-													<input type="text" name="monthsOfPregnancy">
-											</td></tr><tr>
+													<input type="number" name="monthsOfPregnancy" required pattern="[0-9]{2}" title="Only numeric digits allowed">
+											</td></tr><tr></tr>
 												<td>14B.Mothers Age</td>
 												<td>
-													<input type="text" name="motherAge">
+													<input type="number" name="motherAge" required pattern="[0-9]{2}" title="Only numeric digits allowed">
 											</td></tr><tr>
 											<td>15.Did the mother receive 2 doses of Td during pregnancy?*</td>
 											<td>
-												<select name="didTheMotherReceive2DosesOfTdDuringPregnancy">
-													<option value="none">--Select--</option>
+												<select name="didTheMotherReceive2DosesOfTdDuringPregnancy" required>
+													<option value="">--Select--</option>
 													<option value="Yes">Yes</option>
 													<option value="No">No</option>
 													<option value="Unknown">Unknown</option>
 												</select></td></tr>
 <tr><td>16A.Were there any complications during the pregnancy, or during labour?*</td>
 			<td>
-				<select id="three" name="anyComplicationsDuringThePregnancyOrDuringLabour">
-					<option value="none">--Select--</option>
+				<select id="three" name="anyComplicationsDuringThePregnancyOrDuringLabour" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -253,16 +253,16 @@
 				<input type="checkbox" name="complication" value="Instrumental Delivery">Instrumental Delivery<br></td></tr><tr>
 				<td>17.Was the child a single or multiple birth?*</td>
 				<td>
-					<select name="wasTheChildASingleOrMultipleBirth">
-						<option value="none">--Select--</option>
+					<select name="wasTheChildASingleOrMultipleBirth" required>
+						<option value="">--Select--</option>
 						<option value="Single">Single</option>
 						<option value="Multiple">Multiple</option>
 						<option value="Unknown">Unknown</option>
 					</select></td></tr><tr>
 				<td>18.Where was the baby born?*</td>
 				<td>
-				<select name="whereWasTheBabyBorn">
-					<option value="none">--Select--</option>
+				<select name="whereWasTheBabyBorn" required>
+					<option value="">--Select--</option>
 					<option value="Home">Home</option>
 					<option value="On way to health facility">On way to health facility</option>
 					<option value="PHC/CHC/Rural Hospital">PHC/CHC/Rural Hospital</option>
@@ -275,8 +275,8 @@
 				</select></td></tr><tr>
 				<td>19.Who attended the delivery?*</td>
 				<td>
-				<select name="whoAttendedTheDelivery">
-					<option value="none">--Select--</option>
+				<select name="whoAttendedTheDelivery" required>
+					<option value="">--Select--</option>
 					<option value="Untrained traditional birth attendant">Untrained traditional birth attendant</option>
 					<option value="Trained traditional birth attendant">Trained traditional birth attendant</option>
 					<option value="ANM/Nurse">ANM/Nurse</option>
@@ -287,8 +287,8 @@
 				</select></td></tr><tr>
 				<td>20.Was a disinfected or new used to cut the umbilical cord?* </td>
 				<td>
-				<select name="wasADisinfectedOrNewUsedToCutTheUmbilicalCord">
-					<option value="none">--Select--</option>
+				<select name="wasADisinfectedOrNewUsedToCutTheUmbilicalCord" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -297,8 +297,8 @@
 				<tr>
 					<td>21. Did the baby ever cry, move or breath?*</td>
 				<td>
-				<select name="didTheBabyEverCry">
-					<option value="none">--Select--</option>
+				<select name="didTheBabyEverCry" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -308,8 +308,8 @@
 				<tr>
 					<td>22. Were there any bruises or signs of injury on child's body after the birth?*</td>
 				<td>
-				<select name="wereThereAnyBruisesOrSignsOfInjuryOnChild">
-					<option value="none">--Select--</option>
+				<select name="wereThereAnyBruisesOrSignsOfInjuryOnChild" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -318,8 +318,8 @@
 				<tr>
 					<td>23. Did s/he have any visible malformations at birth?*</td>
 				<td>
-				<select name="malformationsAtBirth">
-					<option value="none">--Select--</option>
+				<select name="malformationsAtBirth" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -328,8 +328,8 @@
 				<tr>
 					<td>24A. Compared to other children in your area, what was the child's size at birth?*</td>
 				<td>
-				<select name="sizeAtBirth">
-					<option value="none">--Select--</option>
+				<select name="sizeAtBirth" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -337,13 +337,13 @@
 				</tr>
 				<tr>
 					<td>24B. What was the birth weight?*</td>
-					<td><input type="Number" name="birthWeight"></td>
+					<td><input type="Number" name="birthWeight" required pattern="[0-9]{1,2}" title="Only numeric digits allowed"></td>
 				</tr>
 				<tr>
 					<td>25A. Did baby stop being able to cry?*</td>
 				<td>
-				<select name="didBabyStopBeingAbleToCry">
-					<option value="none">--Select--</option>
+				<select name="didBabyStopBeingAbleToCry" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -361,8 +361,8 @@
 				<tr>
 					<td>26A. When was s/he first breastfed?*</td>
 				<td>
-				<select name="firstBreastfed">
-					<option value="none">--Select--</option>
+				<select name="firstBreastfed" required>
+					<option value="">--Select--</option>
 					<option value="Immediately/within one hour of birth">Immediately/within one hour of birth</option>
 					<option value="No">Same day child was born</option>
 					<option value="No">Second day or later</option>
@@ -383,8 +383,8 @@
 				<tr>
 					<td>27A. Was s/he able to suckle normally during the first day of life?*</td>
 				<td>
-				<select name="heAbleToSuckleNormallyDuringTheFirstDayOfLife">
-					<option value="none">--Select--</option>
+				<select name="heAbleToSuckleNormallyDuringTheFirstDayOfLife" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -414,8 +414,8 @@
 	<th>Details of sickness at time of death</th></tr>
 <tr><td>28A.Did s/he have fever?*</td>
 			<td>
-				<select name="heHaveFever">
-					<option value="none">--Select--</option>
+				<select name="heHaveFever" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -432,8 +432,8 @@
 <tr>
 			<td>29A.Did s/he have any difficulty with breathing?*</td>
 			<td>
-				<select name="heHaveAnyDifficultyWithBreathing">
-					<option value="none">--Select--</option>
+				<select name="heHaveAnyDifficultyWithBreathing" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -451,8 +451,8 @@
 <tr>
 			<td>30A.Did s/he have fast breathing?*</td>
 			<td>
-				<select name="heHaveFastBreathing">
-					<option value="none">--Select--</option>
+				<select name="heHaveFastBreathing" required>
+					<option value="">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
 					<option value="Unknown">Unknown</option>
@@ -470,7 +470,7 @@
 <tr>
 			<td>31.Did s/he have in-drawing of the chest?</td>
 			<td>
-				<select name="heHaveInDrawingOfTheChest">
+				<select name="heHaveInDrawingOfTheChest" >
 					<option value="none">--Select--</option>
 					<option value="Yes">Yes</option>
 					<option value="No">No</option>
