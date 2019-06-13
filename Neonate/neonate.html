@@ -20,8 +20,8 @@
 		<table align="center" padding="10px" cellpadding="10">
 			<tr>
 				<td>District*:<br>
-				 <select id="input" name="district" onchange="random_function()">
-                    <option value="null">--District--</option>
+				 <select id="input" name="district" onchange="random_function()" required>
+                    <option value="">--District--</option>
                     <option value="BILASPUR">BILASPUR</option>
                     <option value="CHAMBA">CHAMBA</option>
                     <option value="HAMIRPUR">HAMIRPUR</option>
@@ -36,27 +36,27 @@
                     <option value="UNA">UNA</option>
 </select>
 				<td>Block*:<br>
-				<select id="output" name="block">
+				<select id="output" name="block" required>
 			</tr><tr>
 				<td>Village*:<br>
-				<input type="text" name="village" placeholder="Village"></td>
+				<input type="text" name="village" placeholder="Village" required pattern="[A-Za-z]+" title="Only alplhabets allowed"></td>
 				<td>PHC*:<br>
-				<input type="text" name="phc"  placeholder="PHC"></td>
+				<input type="text" name="phc"  placeholder="PHC" required pattern="[A-Za-z]+" title="Only alplhabets allowed"></td>
 			</tr><tr>
 				<td>Sub-Center*:<br>
-				<input type="text" name="subCenter"  placeholder="Sub-Center"></td>
+				<input type="text" name="subCenter"  placeholder="Sub-Center" required pattern="[A-Za-z]+" title="Only alplhabets allowed"></td>
 				<td>RHC Number of Mother/Baby*:<br>
-				<input type="text" name="rhc" placeholder="RHC Number of Mother/Baby"></td>
+				<input type="text" name="rhc" placeholder="RHC Number of Mother/Baby" required pattern="[0-9]+" title="Only numeric digits allowed"></td>
 				</tr><tr>
 				<td>Year*:<br>
-				<input type="number" name="year" placeholder="Year"></td>
+				<input type="number" name="year" placeholder="Year" required pattern="[0-9]{4}+" title="Only numeric digits allowed"></td>
 				<td>Name of Head of Household*:<br>
-				<input type="household" name="headOfHousehold" placeholder="Head Household"></td>
+				<input type="household" name="headOfHousehold" placeholder="Head Household" required pattern="[A-Za-z]+" title="Only alplhabets allowed"></td>
 				</tr><tr>
 				<td>Full name of deceased*:<br>
-				<input type="text" name="deceasedName" placeholder="Deceased-name"></td>
+				<input type="text" name="deceasedName" placeholder="Deceased-name" required pattern="[A-Za-z]+" title="Only alplhabets allowed"></td>
 				<td>Full name of mother of deceased*:<br>
-				<input type="text" name="motherNameDeceased" placeholder="Name of mother of deceased"></td></tr></table>
+				<input type="text" name="motherNameDeceased" placeholder="Name of mother of deceased" required pattern="[A-Za-z]+" title="Only alplhabets allowed"></td></tr></table>
 		<table class="third" align="center" padding="10px" cellpadding="10">
 			<tr><td><center>SECTION 1: Details For Respondent and Deceased</center></td></tr></table>
 		<table align="center" padding="10px" cellpadding="10">
