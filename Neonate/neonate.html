@@ -63,12 +63,12 @@
 		<tr><th>Details of Respondent:</th></tr>
 			<tr>
 			<td>1.Name of Respondent*:</td>
-			<td><input type="text" placeholder="Respondent Name" name="respondentName"></td></tr>
+			<td><input type="text" placeholder="Respondent Name" name="respondentName" required pattern="[A-Za-z]+[A-Za-z ]+" title="Only alplhabets allowed"></td></tr>
 			<tr>
 			<td>2. Relationship of respondent with deceased*:</td>
 			<td>
-				<select name="relationshipOfRespondentWithDeceased">
-					<option value="none">--Select--</option>
+				<select name="relationshipOfRespondentWithDeceased" required>
+					<option value="">--Select--</option>
 					<option value="Brother/sister">Brother/sister</option>
 					<option value="Grandfather/Grandmother">Grandfather/Grandmother</option>
 					<option value="Mother/Father">Mother/Father</option>
@@ -78,8 +78,8 @@
 					<tr>
 					<td>3. Did the respondent live with the deceased during the events that led to death?*</td>
 					<td>
-					<select name="didTheRespondentLiveWithTheDeceased">
-					<option value="none">--Select--</option>
+					<select name="didTheRespondentLiveWithTheDeceased" required>
+					<option value="">--Select--</option>
 					<option value="yes">Yes</option>
 					<option value="no">No</option>
 					<option value="unknown">Unknown</option></select></td></tr>
@@ -87,8 +87,8 @@
 					<tr>
 					<td>4. What is the highest standard of education the respondent has completed?*</td>
 					<td>
-						<select name="highestStandardOfEducationTheRespondentHasCompleted">
-							<option value="none">--Select--</option>
+						<select name="highestStandardOfEducationTheRespondentHasCompleted" required>
+							<option value="">--Select--</option>
 							<option value="Illiterate and literate with no formal education">Illiterate and literate with no formal education</option>
 							<option value="Literate, Primary or below">Literate, Primary or below</option>
 							<option value="Literate, Class XII">Literate, Class XII</option>
@@ -100,8 +100,8 @@
 							<tr>
 							<td>5. Category*:</td>
 							<td>
-							<select name="category">
-							<option value="none">--Select--</option>
+							<select name="category" required>
+							<option value="">--Select--</option>
 							<option value="general">General</option>
 							<option value="obc">OBC</option>
 							<option value="st">ST</option>
@@ -110,8 +110,8 @@
 							<tr>
 								<td>6. Religion of the head of the household*:</td>
 							<td>
-							<select name="religionOfTheHeadOfTheHousehold">
-							<option value="none">--Select--</option>
+							<select name="religionOfTheHeadOfTheHousehold" required>
+							<option value="">--Select--</option>
 							<option value="hindu">Hindu</option>
 							<option value="muslims">Muslims</option>
 							<option value="christian">Christian</option>
